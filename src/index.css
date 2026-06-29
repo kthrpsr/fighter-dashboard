@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Dark theme (default) */
+.dark {
+  --bg-main: #0f1117;
+  --bg-card: #1a1d24;
+  --accent: #e8c840;
+  --border: #2a2d35;
+  --text-primary: #f0f0f0;
+  --text-secondary: #c0c4cc;
+  --text-muted: #6b7280;
+}
+
+/* Light theme */
+.light {
+  --bg-main: #f5f6f8;
+  --bg-card: #ffffff;
+  --accent: #c9a800;
+  --border: #e0e2e8;
+  --text-primary: #111318;
+  --text-secondary: #3d4251;
+  --text-muted: #777e90;
+}
+
+.app-root {
+  min-height: 100vh;
+  background: var(--bg-main);
+  color: var(--text-primary);
+  transition: background 0.2s, color 0.2s;
+}
+
+.app-main {
+  min-height: calc(100vh - 70px);
+}
+
+button {
+  font-family: inherit;
+}
