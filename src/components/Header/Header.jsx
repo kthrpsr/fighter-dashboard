@@ -30,3 +30,4 @@ export default function Header({ view, onViewChange, darkMode, onToggleDark }) {
     </header>
   );
 }
+# Header Component
